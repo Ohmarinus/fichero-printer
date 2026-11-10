@@ -7,7 +7,7 @@ export type ConnectionType = "bluetooth";
 
 export type LabelUnit = "mm" | "px";
 export type OjectType = "text" | "rectangle" | "line" | "circle" | "image" | "qrcode" | "barcode";
-export type PostProcessType = "threshold" | "dither" | "bayer";
+export type PostProcessType = "none" | "threshold" | "dither" | "bayer";
 export type MoveDirection = "up" | "down" | "left" | "right";
 export type LabelShape = "rect" | "rounded_rect" | "circle";
 export type LabelSplit = "none" | "vertical" | "horizontal";
@@ -80,7 +80,7 @@ export const PreviewPropsOffsetSchema = z.object({
 });
 
 export const PreviewPropsSchema = z.object({
-  postProcess: z.enum(["threshold", "dither", "bayer"]).optional(),
+  postProcess: z.enum(["none", "threshold", "dither", "bayer"]).optional(),
   postProcessInvert: z.boolean().optional(),
   threshold: z.number().gte(1).lte(255).optional(),
   quantity: z.number().gte(1).optional(),
