@@ -417,6 +417,7 @@
         class="form-select"
         bind:value={postProcessType}
         onchange={() => updateSavedProp("postProcess", postProcessType, true)}>
+        <option value="none">{$tr("preview.postprocess.none")}</option>
         <option value="threshold">{$tr("preview.postprocess.threshold")}</option>
         <option value="dither">{$tr("preview.postprocess.atkinson")}</option>
         <option value="bayer">{$tr("preview.postprocess.bayer")}</option>
@@ -447,9 +448,11 @@
         class="form-range"
         min="1"
         max="255"
+        disabled={postProcessType === "none"}
         bind:value={thresholdValue}
         onchange={() => updateSavedProp("threshold", thresholdValue, true)} />
       <span class="input-group-text">{thresholdValue}</span>
+
 
       <ParamLockButton
         propName="threshold"
