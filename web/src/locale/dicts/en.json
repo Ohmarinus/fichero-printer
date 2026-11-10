@@ -162,6 +162,7 @@
     "preview.offset.inner": "Inner",
     "preview.offset.outer": "Outer",
     "preview.offset": "Offset",
+    "preview.postprocess.none": "None (unaltered)",
     "preview.postprocess.atkinson": "Dither (Atkinson)",
     "preview.postprocess.bayer": "Dither (Bayer)",
     "preview.postprocess.threshold": "Threshold",
