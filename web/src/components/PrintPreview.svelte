@@ -417,10 +417,10 @@
         class="form-select"
         bind:value={postProcessType}
         onchange={() => updateSavedProp("postProcess", postProcessType, true)}>
-        <option value="none">{$tr("preview.postprocess.none")}</option>
         <option value="threshold">{$tr("preview.postprocess.threshold")}</option>
         <option value="dither">{$tr("preview.postprocess.atkinson")}</option>
         <option value="bayer">{$tr("preview.postprocess.bayer")}</option>
+        <option value="none">{$tr("preview.postprocess.none")}</option>
       </select>
 
       <ParamLockButton
