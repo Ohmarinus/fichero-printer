@@ -7,7 +7,7 @@ export type ConnectionType = "bluetooth";
 
 export type LabelUnit = "mm" | "px";
 export type OjectType = "text" | "rectangle" | "line" | "circle" | "image" | "qrcode" | "barcode";
-export type PostProcessType = "none" | "threshold" | "dither" | "bayer";
+export type PostProcessType = "threshold" | "dither" | "bayer" | "none";
 export type MoveDirection = "up" | "down" | "left" | "right";
 export type LabelShape = "rect" | "rounded_rect" | "circle";
 export type LabelSplit = "none" | "vertical" | "horizontal";
